@@ -1,0 +1,159 @@
+:root {
+  --text-color: #ffffff;    
+  --highlight-color: #e1be64; /* اللون الأصفر */
+  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+  --sansfont: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(80, 97, 88);
+}
+
+.sans-font {
+  font-family: var(--sansfont);
+  font-size: small;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+/* ===================== Navbar ===================== */
+.navbar {
+  background: transparent;
+  padding: 1rem 4rem;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-nav.left {
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+
+.navbar-nav.right {
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 5rem;
+}
+
+/* روابط النافبار */
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+  text-transform: none;
+  position: relative;
+  letter-spacing: 0.5px;
+  padding-bottom: 5px; /* مساحة للخط */
+  transition: color 0.3s ease;
+}
+
+/* الخط الأبيض تحت الرابط */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: width 0.3s ease;
+}
+
+/* الخط يظهر عند hover أو عند فتح الـ dropdown */
+.nav-item.dropdown:hover > .nav-link::after,
+.nav-item.dropdown.show > .nav-link::after {
+  width: 100%;
+}
+
+/* ===================== Dropdown Menu ===================== */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%; /* زيادة عن 100% لإبعاد القائمة عن العنصر */
+  left: 0;
+  background-color: var(--dropdown-bg);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px;
+  min-width: 200px;
+}
+
+
+/* عرض القائمة عند hover */
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.dropdown.show > .dropdown-menu {
+  display: block;
+}
+
+/* عناصر القائمة */
+.dropdown-item {
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* إزالة الخط الأخير */
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* عند hover */
+.dropdown-item:hover {
+  color: var(--highlight-color);
+}
+
+/* خط أصفر تحت العنصر عند hover */
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--highlight-color);
+  transition: width 0.3s ease;
+}
+
+.dropdown-item:hover::after {
+  width: 100%;
+}
+
+/* السهم داخل العنصر يتحول أصفر عند hover */
+.dropdown-item svg path {
+  transition: fill 0.3s ease;
+}
+
+.dropdown-item:hover svg path {
+  fill: var(--highlight-color);
+}
+
+/* إزالة سهم Bootstrap الأصلي */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: width 0.3s ease;
+}
+
+.nav-item.dropdown:hover > .nav-link::after,
+.nav-item.dropdown.show > .nav-link::after {
+  width: 100%;
+}
