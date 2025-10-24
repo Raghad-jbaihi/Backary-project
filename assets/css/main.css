@@ -4,6 +4,7 @@
   --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
    --second-color:#8da6b7;
    --p-color:#666666;
+   --heading-color:#303030;
   --sansfont: "Open Sans", sans-serif;
   --Pacifico-cursive-font:"Pacifico", cursive;
  
@@ -199,5 +200,44 @@ body{
 /*end of hero*/
 
 
+/*start of delicious*/
+.delicious h2{
+font-family:var(--Pacifico-cursive-font);
+font-size: 45px;
+font-weight: 400;
+line-height: 58.5px;
+color:var(--heading-color);
+}
 
+.delicious p{
+    color:var(--p-color);
+    font-size: 16px;
+}
+
+.delicious .card img{
+    border:none;
+    border-radius: 50%;
+     transition: transform 0.6s; 
+}
+
+.delicious .card h5{
+    color:var(--heading-color);
+    
+}
+
+.delicious .card p{
+    color:var(--p-color);
+}
+
+.delicious .cards{
+    display:flex;
+    justify-content:space-between;
+  }
+
+.delicious .card:hover img {
+    transform: scale(1.05);
+}
+
+
+/*end of delicious*/
 
