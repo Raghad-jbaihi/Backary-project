@@ -2,11 +2,15 @@
   --text-color: #ffffff;    
   --highlight-color: #e1be64; /* اللون الأصفر */
   --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+   --second-color:#8da6b7;
+   --p-color:#666666;
   --sansfont: "Open Sans", sans-serif;
+  --Pacifico-cursive-font:"Pacifico", cursive;
+ 
 }
 
-body {
-  background-color: rgb(80, 97, 88);
+body{
+    height: 5000px;
 }
 
 .sans-font {
@@ -157,3 +161,43 @@ body {
 .nav-item.dropdown.show > .nav-link::after {
   width: 100%;
 }
+/*end of navbar*/
+
+/*start of hero*/
+/*overpaly images*/
+.hero .carousel-item img.overlay {
+  opacity: 0;
+  transform: scale(0); /* تبدأ من المركز بدون حجم */
+  transition: opacity .8s ease-out, transform 1.5s ease-out;
+}
+
+.hero .carousel-item.active img.overlay {
+  opacity: 1;
+  transform: scale(1); /* تكبر تدريجياً إلى حجمها الطبيعي */
+}
+
+/*carousel-indicators in hero*/
+.hero .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* تجعلها دائرة */
+  background-color:var(--second-color); /* لون افتراضي */
+  opacity: 0.7; /* شفافية */
+  border: none; /* إزالة الحدود الافتراضية */
+  transition: all 0.3s ease;
+   margin: 0 6px;
+}
+
+
+.hero .carousel-indicators .active {
+  background-color: var(--text-color); 
+  opacity: 1;
+  transform: scale(1.2); /* تكبير المؤشر النشط قليلاً */
+
+}
+
+/*end of hero*/
+
+
+
+

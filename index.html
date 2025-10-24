@@ -16,10 +16,12 @@
     <!--"Open Sans", sans-serif font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+
+    <!--"Pacifico", cursive font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <!--Font Awesome-->
     <link
@@ -30,8 +32,8 @@
     <!--Custom css-->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg py-5">
+  <body class="sans-font">
+    <nav class="navbar navbar-expand-lg py-4 position-fixed w-100 top-0 z-1">
       <div class="container d-flex justify-content-between align-items-center">
         <ul class="navbar-nav left">
           <li class="nav-item dropdown sans-font text-color">
@@ -482,7 +484,42 @@
       </div>
     </nav>
 
-    <main></main>
+    <main>
+      <section class="hero vh-100 pb-5 ">
+        <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active position-relative">
+  <img src="./assets/img/hero-homepage/first.webp" class="d-block w-100" alt="background-1">
+   <img src="./assets/img/hero-homepage/mybread.png" class="position-absolute top-50 start-50 translate-middle overlay"  alt="Overl-background-1" style="width: 581px; height: 272px;">
+</div>
+ <div class="carousel-item">
+     <img src="./assets/img/hero-homepage/second.webp" class="d-block w-100" alt="background-2">
+     <img src="./assets/img/hero-homepage/backedfresh.png" class="position-absolute top-50 start-50 translate-middle overlay"  alt="Overl-background-2" style="width: 581px; height: 272px;">
+
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/hero-homepage/third.webp" class="d-block w-100" alt="background-3">
+      <img src="./assets/img/hero-homepage/de-bon.png" class="position-absolute top-50 start-50 translate-middle overlay"  alt="Overl-background-3" style="width: 581px; height: 272px;">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </section>
+
+     
+    </main>
     <a href="./log-in.html">Log In</a>
     <a href="./register.html">Sign UP </a>
     <script
