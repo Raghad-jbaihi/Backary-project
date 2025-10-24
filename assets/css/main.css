@@ -241,3 +241,38 @@ color:var(--heading-color);
 
 /*end of delicious*/
 
+
+/*start of romance*/
+.romance h2{
+font-family:var(--Pacifico-cursive-font);
+font-size: 45px;
+font-weight: 400;
+line-height: 58.5px;
+color:var(--heading-color);
+}
+
+.romance p{
+    color:var(--p-color);
+    font-size: 16px;
+}
+
+.romance .card img{
+    border:none;
+    border-radius: 50%; 
+}
+
+.romance .card h5{
+    color:var(--heading-color);
+    
+}
+
+.romance .card p{
+    color:var(--p-color);
+}
+
+.romance .cards{
+    display:flex;
+    justify-content:space-between;
+  }
+
+/*end of romance*/
