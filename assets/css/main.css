@@ -5,6 +5,7 @@
    --second-color:#8da6b7;
    --p-color:#666666;
    --heading-color:#303030;
+   --newsletter:#bcc9d6;
   --sansfont: "Open Sans", sans-serif;
   --Pacifico-cursive-font:"Pacifico", cursive;
  
@@ -162,6 +163,18 @@ body{
 .nav-item.dropdown.show > .nav-link::after {
   width: 100%;
 }
+
+.navbar {
+  transition: all 0.4s ease;
+  background-color: transparent;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
 /*end of navbar*/
 
 /*start of hero*/
@@ -240,6 +253,66 @@ color:var(--heading-color);
 
 
 /*end of delicious*/
+
+/*start of newsletter*/
+.newsletter {
+  background: url("../img/newsletter/newsletter.webp");
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:var(--dropdown-bg);
+
+}
+
+/*  background of progress bar */
+.custom-progress {
+  background-color:var(--newsletter);
+  height: 12px;
+  
+}
+
+/* color of progress*/
+.custom-bar {
+  background-color:var(--text-color); 
+   border-radius: 10px;
+   
+}
+
+.newsletter h3{
+font-family:var(--Pacifico-cursive-font);
+font-size: 45px;
+font-weight: 400;
+line-height: 58.5px;
+color:var(--text-color);
+padding-top: 20px;
+}
+.newsletter p{
+    color:var(--text-color);
+    font-size: 16px;
+padding:10px;
+}
+
+.newsletter button {
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--text-color); 
+    color: var(--heading-color);        
+    text-decoration: none;             
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+.newsletter button:hover{
+    color:var(--text-color);
+    background-color: var(--highlight-color);
+}
+
+
+
+
+/*end of newsletter*/
 
 
 /*start of romance*/
