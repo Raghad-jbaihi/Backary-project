@@ -1,0 +1,36 @@
+:root {
+  --text-color: #ffffff;    
+  --highlight-color: #e1be64; /* اللون الأصفر */
+  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+   --second-color:#8da6b7;
+   --p-color:#666666;
+   --heading-color:#303030;
+   --newsletter:#bcc9d6;
+  --sansfont: "Open Sans", sans-serif;
+  --Pacifico-cursive-font:"Pacifico", cursive;
+ 
+}
+/*Start of love job section*/
+ .lovejob .row h2{
+   color:var(--heading-color);
+   font-family: var(--sansfont);
+   font-size: 37px;
+font-weight: 600;
+line-height: 50px;
+
+}
+
+.lovejob .row p{
+    color:var(--p-color);
+    font-size: 16px;
+}
+
+.lovejob .col-12.col-md-6.offset-lg-1.col-lg-5 img.img-fluid {
+  height: 95%;      
+  width: 100%;
+  object-fit:cover;  
+  display: block;   
+}
+
+
+/*end of love job section*/
