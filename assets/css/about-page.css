@@ -10,6 +10,10 @@
   --Pacifico-cursive-font:"Pacifico", cursive;
  
 }
+
+body{
+    height: 5000px;
+}
 /*Start of love job section*/
  .lovejob .row h2{
    color:var(--heading-color);
@@ -20,7 +24,7 @@ line-height: 50px;
 
 }
 
-.lovejob .row p{
+.lovejob .row .lovejobs p{
     color:var(--p-color);
     font-size: 16px;
 }
@@ -35,3 +39,41 @@ line-height: 50px;
 
 
 /*end of love job section*/
+
+/*Start of newsletter  section*/
+.newsletter {
+  background: url("../img/about-page/newsletter/newsletter-about-page.webp");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    min-height: 180px;
+     margin-top: 3rem;
+
+}
+.newsletter p{
+    color:var(--text-color);
+     font-family: var(--sansfont);
+    font-size: 20px;
+font-weight: 300;
+line-height: 29px;
+padding:10px;
+}
+
+.newsletter button {
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--text-color); 
+    color: var(--heading-color);        
+    text-decoration: none;             
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+.newsletter button:hover{
+    color:var(--text-color);
+    background-color: var(--highlight-color);
+}
+
+/*end of newsletter  section*/
