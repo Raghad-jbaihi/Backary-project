@@ -1,0 +1,77 @@
+:root {
+  --text-color: #ffffff;
+  --highlight-color: #e1be64; /* اللون الأصفر */
+  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+  --second-color: #8da6b7;
+  --p-color: #666666;
+  --heading-color: #303030;
+  --newsletter: #bcc9d6;
+  --btn2-bordercolor: #d9d9d9;
+  --sansfont: "Open Sans", sans-serif;
+  --Pacifico-cursive-font: "Pacifico", cursive;
+}
+
+body {
+  height: 5000px;
+}
+
+
+/*Start of tradition section*/
+.tradition .row h2 {
+  color: var(--heading-color);
+  font-family: var(--sansfont);
+ font-size: 36px;
+font-weight: 600;
+line-height: 44px;
+}
+.spaced {
+  letter-spacing: 4px;
+}
+
+.tradition .row .p1 {
+  color: var(--p-color);
+  font-size: 16px;
+font-weight: 300;
+line-height: 27px;
+}
+
+.tradition img.img-fluid {
+ height: 400px;
+    max-width: 120%;
+    vertical-align: top;  
+}
+
+
+.tradition  button.btn1 {
+  padding: 10px 25px;
+  border: 1px solid;
+  border-color: var(--btn2-bordercolor);
+  background-color: var(--heading-color);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tradition button.btn2 {
+  padding: 10px 25px;
+  border: 1px solid;
+  border-color: var(--btn2-bordercolor);
+  background-color: var(--text-color);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tradition button.btn1:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
+
+.tradition button.btn2:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
+
+
+/*end of tradition section*/
