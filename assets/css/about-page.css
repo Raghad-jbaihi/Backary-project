@@ -1,40 +1,39 @@
 :root {
-  --text-color: #ffffff;    
+  --text-color: #ffffff;
   --highlight-color: #e1be64; /* اللون الأصفر */
   --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
-   --second-color:#8da6b7;
-   --p-color:#666666;
-   --heading-color:#303030;
-   --newsletter:#bcc9d6;
+  --second-color: #8da6b7;
+  --p-color: #666666;
+  --heading-color: #303030;
+  --newsletter: #bcc9d6;
+  --btn2-bordercolor: #d9d9d9;
   --sansfont: "Open Sans", sans-serif;
-  --Pacifico-cursive-font:"Pacifico", cursive;
- 
+  --Pacifico-cursive-font: "Pacifico", cursive;
 }
 
-body{
-    height: 5000px;
+body {
+  height: 5000px;
 }
+
+
 /*Start of love job section*/
- .lovejob .row h2{
-   color:var(--heading-color);
-   font-family: var(--sansfont);
-   font-size: 37px;
-font-weight: 600;
-line-height: 50px;
-
+.lovejob .row h2 {
+  color: var(--heading-color);
+  font-family: var(--sansfont);
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
-.lovejob .row .lovejobs p{
-    color:var(--p-color);
-    font-size: 16px;
+.lovejob .row .p1 {
+  color: var(--p-color);
+  font-size: 16px;
 }
 
 .lovejob .col-12.col-md-6.offset-lg-1.col-lg-5 img.img-fluid {
-  height: 95%;      
-  width: 100%;  
-     
-  object-fit: cover;  
-  display: block;   
+   height: 400px;    
+   width: 100%;        
+   object-fit: cover;  
 }
 
 
@@ -48,32 +47,89 @@ line-height: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    min-height: 180px;
-     margin-top: 3rem;
-
+  min-height: 180px;
+  margin-top: 3rem;
 }
-.newsletter p{
-    color:var(--text-color);
-     font-family: var(--sansfont);
-    font-size: 20px;
-font-weight: 300;
-line-height: 29px;
-padding:10px;
+.newsletter p {
+  color: var(--text-color);
+  font-family: var(--sansfont);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 29px;
+  padding: 10px;
 }
 
 .newsletter button {
-    padding: 10px 25px;
-    border: none;
-    background-color: var(--text-color); 
-    color: var(--heading-color);        
-    text-decoration: none;             
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px 25px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
 }
- 
-.newsletter button:hover{
-    color:var(--text-color);
-    background-color: var(--highlight-color);
+
+.newsletter button:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
 }
 
 /*end of newsletter  section*/
+
+/*Start Of touch*/
+.container .row .touch h2 {
+  color: var(--heading-color);
+  font-family: var(--sansfont);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.spaced {
+  letter-spacing: 8px;
+}
+
+.container .row .p1 {
+  color: var(--p-color);
+  font-size: 16px;
+}
+
+.container .map button.btn1 {
+  padding: 10px 25px;
+  border: 1px solid;
+  border-color: var(--btn2-bordercolor);
+  background-color: var(--heading-color);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .map button.btn2 {
+  padding: 10px 25px;
+  border: 1px solid;
+  border-color: var(--btn2-bordercolor);
+  background-color: var(--text-color);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .map button.btn1:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
+
+.container .map button.btn2:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
+
+.container .map iframe {
+  height: 400px;
+  width: 700px;
+
+  margin: auto;
+  display: block;
+}
+/*Start Of touch*/
