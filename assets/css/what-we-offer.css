@@ -1,0 +1,64 @@
+:root {
+  --text-color: #ffffff;
+  --highlight-color: #e1be64; /* اللون الأصفر */
+  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+  --second-color: #8da6b7;
+  --p-color:#666666;
+  --heading-color: #333333;;
+  --newsletter: #bcc9d6;
+  --btn2-bordercolor: #d9d9d9;
+  --sansfont: "Open Sans", sans-serif;
+  --Pacifico-cursive-font: "Pacifico", cursive;
+  --Scriptina-font:"WindSong", cursive;
+}
+
+
+
+body{
+    height: 5000px;
+}
+.spaced {
+  letter-spacing: 4px;
+}
+
+.container .row h2{
+font-family:var(--Scriptina-font);
+font-size: 70px;
+font-weight: 300;
+line-height: 77px;
+color:var(--highlight-color);
+margin-bottom: 0;
+}
+
+.container .row h3{
+font-family:var(--sansfont);
+font-size: 40px;
+font-weight: 600;
+line-height: 52px;
+color:var(--heading-color);
+margin-top: 0;
+}
+
+.container .row p{
+font-family:var(--sansfont);
+font-size: 14px;
+font-weight: 300;
+line-height: 27px;
+color:var(--p-color)
+}
+
+.container button.btn1 {
+  padding: 15px 40px;
+  border: 1px solid;
+  border-color: var(--btn2-bordercolor);
+  background-color: var(--text-color);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+ .container button.btn1:hover {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
