@@ -4,6 +4,7 @@
   --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
   --second-color: #8da6b7;
   --p-color:#666666;
+  --p1-color:#999999;
   --heading-color: #333333;;
   --newsletter: #bcc9d6;
   --btn2-bordercolor: #d9d9d9;
@@ -47,3 +48,84 @@ line-height: 26px;
 color:var(--p-color);
 }
 /* end of breakfast section*/
+
+
+/* start bread menu section*/
+.bread-menu h2{
+font-family:var(--sansfont);
+font-size: 35px;
+font-weight: 600;
+line-height: 45.5px;
+color:var(--heading-color);
+}
+.bread-menu h5{
+font-family:var(--sansfont);
+font-size: 20px;
+font-weight: 300;
+line-height: 10px;
+color:var(--heading-color);
+}
+
+.bread-menu p{
+font-family:var(--sansfont);
+font-size: 16px;
+font-weight: 300;
+line-height: 26px;
+color:var(--p-color);
+}
+
+.bread-menu .p1{
+font-family:var(--sansfont);
+font-size: 15px;
+font-weight: 300;
+line-height: 26px;
+color:var(--p1-color);
+}
+
+.bread-menu {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bread-overlay {
+  width: 70%;
+  max-width: 500px;
+  max-height: 80%; /* أقصى ارتفاع حسب الصورة */
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow-y: auto; /* يظهر scroll لو النص تجاوز الحد */
+}
+
+@media (max-width: 768px) {
+  .bread-overlay {
+    width: 85%;
+    max-height: 70%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .bread-overlay {
+    width: 90%;
+    max-height: 60%;
+    padding: 1rem;
+  }
+}
+
+/* لإخفاء scroll bar بشكل أنيق على بعض المتصفحات */
+.bread-overlay::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+/* end bread menu section*/
