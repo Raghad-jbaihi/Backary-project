@@ -11,9 +11,7 @@
   --Pacifico-cursive-font: "Pacifico", cursive;
 }
 
-body {
-  height: 5000px;
-}
+
 
 
 /*Start of love job section*/
@@ -136,3 +134,42 @@ line-height: 27px;
 }
 /*Start Of touch*/
 
+/*start of footer */
+.footer {
+  background: #1e1e1e;
+  width:100%;
+}
+ .footer .p1{
+color:var(--p-color);
+ }
+
+
+.footer-bottom {
+  background-color: #000;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a .svg:hover {
+  background-color:var(--highlight-color);
+}
+
+.footer .email-input{
+  border-radius: 0px;
+  padding:5px;
+}
+.footer .btn-footer{
+  background-color: var(--highlight-color);
+  border:none;
+  padding:10px 20px;
+  color:var(--text-color);
+}
+.footer .number{
+  color:var(--highlight-color);
+}
+
+/*end of footer*/
