@@ -1,0 +1,49 @@
+:root {
+  --text-color: #ffffff;
+  --highlight-color: #e1be64; /* اللون الأصفر */
+  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+  --second-color: #8da6b7;
+  --p-color:#666666;
+  --heading-color: #333333;;
+  --newsletter: #bcc9d6;
+  --btn2-bordercolor: #d9d9d9;
+  --sansfont: "Open Sans", sans-serif;
+  --Pacifico-cursive-font: "Pacifico", cursive;
+  --Scriptina-font:"WindSong", cursive;
+  --span-color:#303030;
+}
+
+
+
+body{
+    height: 5000px;
+}
+.spaced {
+  letter-spacing: 4px;
+}
+
+/* start of breakfast section*/
+.container .breakfast h2{
+font-family:var(--sansfont);
+font-size: 40px;
+font-weight: 600;
+line-height: 44px;
+color:var(--heading-color);
+}
+
+.container .breakfast span{
+font-family:var(--sansfont);
+font-size: 20px;
+font-weight: 300;
+line-height: 10px;
+color:var(--span-color);
+}
+
+.container .breakfast p{
+font-family:var(--sansfont);
+font-size: 14px;
+font-weight: 300;
+line-height: 26px;
+color:var(--p-color);
+}
+/* end of breakfast section*/
