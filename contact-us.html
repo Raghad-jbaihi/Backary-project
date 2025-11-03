@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
- 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     
     <!--"Open Sans", sans-serif font-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,8 +26,614 @@
     <!--Custom css-->
     <link rel="stylesheet" href="./assets/css/contact-us.css" />
 </head>
+ <!--Navbar section-->
+    <nav class="navbar navbar-expand-lg py-4 position-absolute w-100 top-0 z-1 d-none d-lg-flex">
+      <div class="container">
+        <!--Slogan-->
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="./assets/img/navbar/Backary.png" alt="Logo" style="height: 60px; width:110px" />
+        </a>
+
+        <!-- ICONS-->
+         <!--magnifying glass-->
+        <div class="d-flex align-items-center order-lg-3">
+          <a href="#" class="nav-icon me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+          </a>
+
+        <!--bag shopping icon-->
+        <div class="position-relative d-inline-block me-3">
+         <a href="#" data-bs-toggle="collapse" data-bs-target="#alertDiv" aria-expanded="false" aria-controls="alertDiv">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+           <path fill="#ffffff" d="M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/>
+           </svg>
+         </a>
+        <div class="collapse position-absolute top-100 start-50 translate-middle-x mt-2" id="alertDiv" style="min-width: 220px; z-index: 1000;">
+           <div class="alert bg-white d-flex align-items-center p-2 mb-0" role="alert">
+         <div>
+        No products in the cart.
+      </div>
+    </div>
+  </div>
+</div>
+           <!--menu icon-->
+            <a href="#"
+     class="nav-icon"
+     data-bs-toggle="offcanvas"
+     data-bs-target="#offcanvasRight"
+     aria-controls="offcanvasRight">
+    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+      <path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+    </svg>
+  </a>
+
+        </div>
+
+        <!--LINKS-->
+        <div
+          class="collapse navbar-collapse justify-content-center order-lg-2"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav gap-lg-4 text-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white fs-6" href="#" data-bs-toggle="dropdown">Home
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a class="dropdown-item py-2 ms-3" href="#">Bagel</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Cupcake</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Croissant
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Pretzel</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Strudel
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Buguette</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Canape</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Crouton
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Muffin</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">BreadStick</a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Crumpet</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Cannoli</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Landing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white fs-6" href="#" data-bs-toggle="dropdown">Pages
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a class="dropdown-item py-2 ms-3" href="./about-page.html">About Me</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./menu.html">The Menu
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg></a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="./team.html">Our Team</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./services.html">Our Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./what-we-offer.html">What We Offer</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Pricing Plans</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./contact-us.html">Contact Us </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Leave us a note</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">404 Error Page</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./log-in.html">LogIn Page</a>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white fs-6" href="#" data-bs-toggle="dropdown">PORTFOLIO
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Standard
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Gallary
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Masonry
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">PortFolio Single
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white fs-6" href="#" data-bs-toggle="dropdown">Blog
+ <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Standard
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Masonry
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Single Post
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white fs-6" href="#" data-bs-toggle="dropdown">Shop
+                 <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item" href="#">Shop List</a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item" href="#">Single Products</a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Shop Page
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Shop Layout
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+            
+             <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown position-static">
+        <a
+          class="nav-link text-white"
+          href="#"
+          id="elementsDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Elements
+           <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#ffffff"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+        </a>
+
+        <!--  ELEMENT Dropdown-->
+         <div
+          class=" dropdown-menu w-100 mt-0 border-0 rounded-0 py-4"
+          aria-labelledby="elementsDropdown"
+        >
+          <div class="container py-3 d-flex justify-content-between flex-wrap element-menu">
+            <ul class="list-unstyled px-3">
+              <li><a href="#" class="dropdown-item first">CLASSIC</a></li>
+              <li><a href="#" class="dropdown-item other">Buttons</a></li>
+              <li><a href="#" class="dropdown-item other">Contact Form</a></li>
+              <li><a href="#" class="dropdown-item other">Call To Action</a></li>
+              <li><a href="#" class="dropdown-item other">Parallax</a></li>
+              <li><a href="#" class="dropdown-item other">Tabs</a></li>
+              <li><a href="#" class="dropdown-item other">Accordions</a></li>
+            </ul>
+
+            <ul class="list-unstyled px-3">
+              <li><a href="#" class="dropdown-item first">PRESENTATIONAL</a></li>
+              <li><a href="#" class="dropdown-item other">Testimonials</a></li>
+              <li><a href="#" class="dropdown-item other">Team</a></li>
+              <li><a href="#" class="dropdown-item other">Blog Post</a></li>
+              <li><a href="#" class="dropdown-item other">Interactivr Banner</a></li>
+              <li><a href="#" class="dropdown-item other">PortFolio List</a></li>
+              <li><a href="#" class="dropdown-item other">Full Screen Section</a></li>
+            </ul>
+
+            <ul class="list-unstyled px-3">
+              <li><a href="#" class="dropdown-item first">INFOGRAPHIC</a></li>
+              <li><a href="#" class="dropdown-item other">Progress Bar</a></li>
+              <li><a href="#" class="dropdown-item other">Pricing Table</a></li>
+              <li><a href="#" class="dropdown-item other">Countdown</a></li>
+                <li><a href="#" class="dropdown-item other">Pricing List</a></li>
+              <li><a href="#" class="dropdown-item other">Product List</a></li>
+              <li><a href="#" class="dropdown-item other">Google Maps</a></li>
+            </ul>
+
+            <ul class="list-unstyled px-3">
+              <li><a href="#" class="dropdown-item first">TYPOGRAPHY</a></li>
+              <li><a href="#" class="dropdown-item other">Typography</a></li>
+              <li><a href="#" class="dropdown-item other">Lists</a></li>
+              <li><a href="#" class="dropdown-item other">Dividers</a></li>
+              <li><a href="#" class="dropdown-item other">Image With Text</a></li>
+            </ul>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     
+<nav class="navbar navbar-light bg-white d-lg-none position-relative">
+  <div class="container-fluid d-flex justify-content-between align-items-center position-relative w-100">
+    <!-- زر Menu -->
+    <div class="dropdown position-relative w-100">
+      <button
+        class="btn btn1-menu text-uppercase"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="30" viewBox="0 0 448 512">
+          <path fill="#050000" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </button>
+
+      <!-- Menu Drop Down-->
+      <ul class="dropdown-menu w-100 position-absolute start-0 mt-0 " aria-labelledby="dropdownMenuButton">
+       <li class="nav-item dropdown">
+              <a class="nav-link fs-6 dropdown-item text-dark" href="#" data-bs-toggle="dropdown">Home
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#666666"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a class="dropdown-item py-2 ms-3" href="#">Bagel</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Cupcake</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Croissant
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Pretzel</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Strudel
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Buguette</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Canape</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Crouton
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg>
+              </a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Muffin</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">BreadStick</a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Crumpet</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Cannoli</a></li>
+            <li><a class="dropdown-item py-2 ms-3" href="#">Landing</a></li>
+              </ul>
+            </li>
+            
+          <li class="nav-item dropdown">
+              <a class="nav-link fs-6 dropdown-item text-dark" href="#" data-bs-toggle="dropdown">Pages
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#666666"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a class="dropdown-item py-2 ms-3" href="./about-page.html">About Me</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./menu.html">The Menu
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#e1be64"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                </svg></a>
+            </li>
+            <li><a class="dropdown-item py-2 ms-3" href="./team.html">Our Team</a></li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./services.html">Our Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./what-we-offer.html">What We Offer</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Pricing Plans</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./contact-us.html">Contact Us </a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">Leave us a note</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="#">404 Error Page</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 ms-3" href="./log-in.html">LogIn Page</a>
+            </li>
+              </ul>
+            </li>
+     <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-item text-dark fs-6" href="#" data-bs-toggle="dropdown">PORTFOLIO
+                <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#666666"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Standard
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Gallary
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Masonry
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">PortFolio Single
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-item text-dark fs-6" href="#" data-bs-toggle="dropdown">Blog
+ <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#666666"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Standard
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Masonry
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Single Post
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-item text-dark  fs-6" href="#" data-bs-toggle="dropdown">Shop
+                 <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#666666"
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item" href="#">Shop List</a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item" href="#">Single Products</a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Shop Page
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+            <li class="d-flex align-items-center py-2 ms-3">
+              <a class="dropdown-item d-flex justify-content-between align-items-center ps-3" href="#">Shop Layout
+                <svg xmlns="http://www.w3.org/2000/svg" height="14" width="7" viewBox="0 0 256 512">
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z" />
+                </svg></a>
+            </li>
+              </ul>
+            </li>
+
+      <li class="nav-item dropdown">
+  <a class="nav-link  dropdown-item text-dark fs-6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Elements
+    <svg xmlns="http://www.w3.org/2000/svg" height="10" width="6.25" viewBox="0 0 320 512">
+      <path fill="#666666"
+        d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+    </svg>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#" class="dropdown-item first">CLASSIC</a></li>
+    <li><a href="#" class="dropdown-item other">Buttons</a></li>
+    <li><a href="#" class="dropdown-item other">Contact Form</a></li>
+    <li><a href="#" class="dropdown-item other">Call To Action</a></li>
+    <li><a href="#" class="dropdown-item other">Parallax</a></li>
+    <li><a href="#" class="dropdown-item other">Tabs</a></li>
+    <li><a href="#" class="dropdown-item other">Accordions</a></li>
+    <li><a href="#" class="dropdown-item first">PRESENTATIONAL</a></li>
+    <li><a href="#" class="dropdown-item other">Testimonials</a></li>
+    <li><a href="#" class="dropdown-item other">Team</a></li>
+    <li><a href="#" class="dropdown-item other">Blog Post</a></li>
+    <li><a href="#" class="dropdown-item other">Interactive Banner</a></li>
+    <li><a href="#" class="dropdown-item other">Portfolio List</a></li>
+    <li><a href="#" class="dropdown-item other">Full Screen Section</a></li>
+    <li><a href="#" class="dropdown-item first">INFOGRAPHIC</a></li>
+    <li><a href="#" class="dropdown-item other">Progress Bar</a></li>
+    <li><a href="#" class="dropdown-item other">Pricing Table</a></li>
+    <li><a href="#" class="dropdown-item other">Countdown</a></li>
+    <li><a href="#" class="dropdown-item other">Pricing List</a></li>
+    <li><a href="#" class="dropdown-item other">Product List</a></li>
+    <li><a href="#" class="dropdown-item other">Google Maps</a></li>
+    <li><a href="#" class="dropdown-item first">TYPOGRAPHY</a></li>
+    <li><a href="#" class="dropdown-item other">Typography</a></li>
+    <li><a href="#" class="dropdown-item other">Lists</a></li>
+    <li><a href="#" class="dropdown-item other">Dividers</a></li>
+    <li><a href="#" class="dropdown-item other">Image With Text</a></li>
+  </ul>
+</li>
+
+      </ul>
+    </div>
+
+    <!-- slogan-->
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+      <img src="./assets/img/navbar/logo-dark.png" alt="Logo" style="height: 35px" />
+    </a>
+  </div>
+</nav>
   <body>
    <main>
+<!--hero section-->
+    <section class="hero position-relative">
+        <img
+          src="./assets/img/contact-page/contact-hero.webp"
+          class="w-100"
+          alt="contact-hero"
+        />
+        <div
+          class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white"
+        >
+          <h1 class="spaced">Contact Us</h1>
+          <p>Experienced and Friendly</p>
+        </div>
+      </section>
      <!--form section-->
      <div class="container py-5">
   <div class="form-contact">
@@ -171,6 +782,92 @@
     <p class="mb-0 small p1">© 2017 Qode Interactive, All Rights Reserved</p>
   </div>
 </footer>
+
+<!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ps-5">
+      <!--Slogan-->
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="./assets/img/navbar/Backary.png" alt="Logo" style="height: 60px; width:110px" />
+        </a>
+
+        <div class="link-list pt-5">
+         <a href="./index.html">HOME</a>
+         <a href="#">PORTFOLIO</a>
+         <a href="#">BLOG</a>
+        <a href="#">SHOP</a>
+        </div>
+
+        <p class="pt-4 py-3"> Lorem ipsum dolor amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div style="height: .9px; background-color: #cccccc; width: 90%;"></div>
+        
+
+        <div class="d-flex align-items-center gap-2 pt-3">
+              <span class="fw-semibold">Follow us:</span>
+              <div class="d-flex gap-3">
+                <a href="#"
+                  ><svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="12"
+                    width="7.5"
+                    viewBox="0 0 320 512"
+                  >
+                    <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                      fill="#666666"
+                      d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"
+                    /></svg
+                ></a>
+                <a href="#"
+                  ><svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="12"
+                    width="12"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                      fill="#666666"
+                      d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103l0-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                    /></svg
+                ></a>
+                <a href="#"
+                  ><svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="12"
+                    width="10.5"
+                    viewBox="0 0 448 512"
+                  >
+                    <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                      fill="#666666"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    /></svg
+                ></a>
+                <a href="#"
+                  ><svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="12"
+                    width="13.5"
+                    viewBox="0 0 576 512"
+                  >
+                    <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                      fill="#666666"
+                      d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+      </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
