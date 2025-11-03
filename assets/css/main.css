@@ -1,7 +1,7 @@
 :root {
   --text-color: #ffffff;    
-  --highlight-color: #e1be64; /* اللون الأصفر */
-  --dropdown-bg: #ffffff; /* خلفية القوائم بيضاء */
+  --highlight-color: #e1be64; 
+  --dropdown-bg: #ffffff;
    --second-color:#8da6b7;
    --p-color:#666666;
    --heading-color:#303030;
@@ -52,11 +52,11 @@
   text-transform: none;
   position: relative;
   letter-spacing: 0.5px;
-  padding-bottom: 5px; /* مساحة للخط */
+  padding-bottom: 5px; 
   transition: color 0.3s ease;
 }
 
-/* الخط الأبيض تحت الرابط */
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -68,7 +68,7 @@
   transition: width 0.3s ease;
 }
 
-/* الخط يظهر عند hover أو عند فتح الـ dropdown */
+
 .nav-item.dropdown:hover > .nav-link::after,
 .nav-item.dropdown.show > .nav-link::after {
   width: 100%;
@@ -78,7 +78,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 110%; /* زيادة عن 100% لإبعاد القائمة عن العنصر */
+  top: 110%; 
   left: 0;
   background-color: var(--dropdown-bg);
   border: none;
@@ -89,13 +89,13 @@
 }
 
 
-/* عرض القائمة عند hover */
+
 .nav-item.dropdown:hover > .dropdown-menu,
 .nav-item.dropdown.show > .dropdown-menu {
   display: block;
 }
 
-/* عناصر القائمة */
+
 .dropdown-item {
   color: #333;
   padding: 0.6rem 1.2rem;
@@ -106,17 +106,17 @@
   background-color: #ffffff;
 }
 
-/* إزالة الخط الأخير */
+
 .dropdown-item:last-child {
   border-bottom: none;
 }
 
-/* عند hover */
+
 .dropdown-item:hover {
   color: var(--highlight-color);
 }
 
-/* خط أصفر تحت العنصر عند hover */
+
 .dropdown-item::after {
   content: "";
   position: absolute;
@@ -132,7 +132,7 @@
   width: 100%;
 }
 
-/* السهم داخل العنصر يتحول أصفر عند hover */
+
 .dropdown-item svg path {
   transition: fill 0.3s ease;
 }
@@ -141,7 +141,7 @@
   fill: var(--highlight-color);
 }
 
-/* إزالة سهم Bootstrap الأصلي */
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -179,23 +179,23 @@
 /*overpaly images*/
 .hero .carousel-item img.overlay {
   opacity: 0;
-  transform: scale(0); /* تبدأ من المركز بدون حجم */
+  transform: scale(0);
   transition: opacity .8s ease-out, transform 1.5s ease-out;
 }
 
 .hero .carousel-item.active img.overlay {
   opacity: 1;
-  transform: scale(1); /* تكبر تدريجياً إلى حجمها الطبيعي */
+  transform: scale(1); 
 }
 
 /*carousel-indicators in hero*/
 .hero .carousel-indicators button {
   width: 10px;
   height: 10px;
-  border-radius: 50%; /* تجعلها دائرة */
-  background-color:var(--second-color); /* لون افتراضي */
-  opacity: 0.7; /* شفافية */
-  border: none; /* إزالة الحدود الافتراضية */
+  border-radius: 50%;
+  background-color:var(--second-color); 
+  opacity: 0.7; 
+  border: none; 
   transition: all 0.3s ease;
    margin: 0 6px;
 }
@@ -204,7 +204,7 @@
 .hero .carousel-indicators .active {
   background-color: var(--text-color); 
   opacity: 1;
-  transform: scale(1.2); /* تكبير المؤشر النشط قليلاً */
+  transform: scale(1.2);
 
 }
 
@@ -368,11 +368,13 @@ color:var(--p-color);
 .footer a {
   transition: color 0.3s ease;
 }
-
-.footer a .svg:hover {
-  background-color:var(--highlight-color);
+.footer svg path {
+  transition: fill 0.3s;
 }
 
+.footer svg:hover path {
+  fill:var(--highlight-color);
+}
 .footer .email-input{
   border-radius: 0px;
   padding:5px;
