@@ -9,11 +9,227 @@
   --btn2-bordercolor: #d9d9d9;
   --sansfont: "Open Sans", sans-serif;
   --Pacifico-cursive-font: "Pacifico", cursive;
+  --offvanvas-color:#cccccc;
 }
 
 
 
+/* start of Navbar section*/
+/* الخط تحت الروابط عند hover */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
 
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color:var(--text-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%; /* زيادة عن 100% لإبعاد القائمة عن العنصر */
+  left: 0;
+  background-color: var(--dropdown-bg);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px;
+  min-width: 200px;
+}
+/* عرض القائمة عند hover */
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.dropdown.show > .dropdown-menu {
+  display: block;
+}
+
+/* عناصر القائمة */
+.dropdown-item {
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* إزالة الخط الأخير */
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* عند hover */
+.dropdown-item:hover {
+  color: var(--highlight-color);
+}
+
+/* خط أصفر تحت العنصر عند hover */
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--highlight-color);
+  transition: width 0.3s ease;
+}
+
+.dropdown-item:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color:var(--text-color);
+}
+.navbar .nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+.nav-link.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* مسافة بين النص والـ svg */
+}
+
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+/* أيقونات اليمين */
+.nav-icon {
+  font-size: 1.25rem;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: #ffc107;
+}
+
+/* تأثير الـ menu تتحول إلى + عند hover */
+.menu-toggle i {
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover i {
+  transform: rotate(45deg);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar .navbar-collapse {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+}
+
+.offcanvas{
+  background-color: #262626;
+}
+
+.offcanvas .offcanvas-body .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*distance between links*/
+  }
+
+ .offcanvas .offcanvas-body .link-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family:var(--sansfont);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    }
+
+   .offcanvas .offcanvas-body .link-list a:hover {
+    color:var(--highlight-color);
+    transform: translateX(10px);/*move links into right*/
+  }
+
+  .offcanvas .offcanvas-body p{
+    font-family: var(--sansfont);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    color:var(--offvanvas-color);
+  }
+    .offcanvas .offcanvas-body span{
+    font-family: var(--sansfont);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    color:var(--offvanvas-color);
+  }
+
+  .offcanvas svg path {
+  transition: fill 0.3s;
+}
+
+.offcanvas svg:hover path {
+  fill:var(--highlight-color);
+}
+
+
+/*element dropdown*/
+ /* الروابط داخل القائمة */
+.element-menu .dropdown-item {
+  transition: all 0.3s;
+  padding: 3px 0; /* تقليل المسافة بين العناصر */
+}
+.element-menu .dropdown-item:hover {
+  color: var(--highlight-color);
+  transform: translateX(10px);
+}
+/* space between columns*/
+.element-menu {
+  gap: 0;
+}
+.first {
+  font-family: var(--sansfont);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+  color: var(--heading-color);
+}
+
+.other {
+  font-family: var(--sansfont);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--heading-color);
+}
+
+.btn-menu {
+  transition: fill 0.3s;
+}
+
+.btn1-menu:hover path {
+  fill:var(--highlight-color);
+}
+
+/* end of Navbar section*/
 /*Start of tradition section*/
 .tradition .row h2 {
   color: var(--heading-color);
