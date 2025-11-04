@@ -373,3 +373,7 @@ color:var(--p-color);
 }
 
 /*end of footer*/
+
+.offcanvas span{
+color:var(--heading-color)
+}

@@ -970,7 +970,7 @@
   const btn = document.getElementById('toggleOffcanvas');
 
   offcanvas.addEventListener('show.bs.offcanvas', () => {
-    btn.style.display = 'none'; 
+    btn.style.display = 'none';
   });
 
   offcanvas.addEventListener('hide.bs.offcanvas', () => {
@@ -981,14 +981,30 @@
   
   const buyButton = document.querySelector('.btn-light'); 
 
-
+ 
   offcanvas.addEventListener('show.bs.offcanvas', () => {
     buyButton.style.display = 'none';
   });
 
- 
+  
   offcanvas.addEventListener('hide.bs.offcanvas', () => {
     buyButton.style.display = 'block';
+  });
+</script>
+<script>
+  
+  const toggleBtn = document.getElementById('toggleOffcanvas');
+  const buyNowBtn = document.querySelector('.btn.btn-light[style*="top: 405px"]');
+
+  const offcanvasRight = document.getElementById('offcanvasRight');
+
+  offcanvasRight.addEventListener('show.bs.offcanvas', () => {
+    toggleBtn.style.display = 'none';
+    buyNowBtn.style.display = 'none';
+  });
+  offcanvasRight.addEventListener('hidden.bs.offcanvas', () => {
+    toggleBtn.style.display = 'block';
+    buyNowBtn.style.display = 'block';
   });
 </script>
 

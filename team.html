@@ -1092,5 +1092,26 @@
     buyButton.style.display = 'block';
   });
 </script>
+<script>
+  // حدد الزرين
+  const toggleBtn = document.getElementById('toggleOffcanvas');
+  const buyNowBtn = document.querySelector('.btn.btn-light[style*="top: 405px"]');
+
+  // حدد الـ offcanvas الرئيسي
+  const offcanvasRight = document.getElementById('offcanvasRight');
+
+  // عند فتح الـ offcanvas → أخفي الأزرار
+  offcanvasRight.addEventListener('show.bs.offcanvas', () => {
+    toggleBtn.style.display = 'none';
+    buyNowBtn.style.display = 'none';
+  });
+
+  // عند إغلاق الـ offcanvas → أظهر الأزرار
+  offcanvasRight.addEventListener('hidden.bs.offcanvas', () => {
+    toggleBtn.style.display = 'block';
+    buyNowBtn.style.display = 'block';
+  });
+</script>
+
   </body>
 </html>
