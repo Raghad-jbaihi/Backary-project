@@ -117,9 +117,7 @@
   transition: all 0.3s ease;
 }
 
-.nav-icon:hover {
-  color: #ffc107;
-}
+
 
 /* تأثير الـ menu تتحول إلى + عند hover */
 .menu-toggle i {
